@@ -1,0 +1,815 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'varela round', sans-serif;
+}
+
+.header-line {
+    width: 20px;
+    margin-top: 30px;
+}
+
+.header ul {
+    list-style-type: none;
+    margin-top: -26px;
+    padding-left: 468px;
+    margin-left: 500px;
+}
+
+.header li {
+    float: left;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    background-color: rgb(179 154 154 / 9%);
+}
+
+.nav-bar {
+    margin: 13px;
+    font-size: 18px;
+}
+
+.logo {
+    font-size: 30px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+b {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+
+.home {
+    background-image: url(../images/Medical-physician-doctor-woma-101147165.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.home-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.home-content {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 300px;
+    font-size: 25px;
+}
+
+.div {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.b {
+    width: 118px;
+    height: 42px;
+    border-radius: 6px;
+    font-size: 17px;
+}
+
+.b1 {
+    margin-top: 15px;
+}
+
+.b2 {
+    background-color: #16acce;
+}
+
+.b1:hover {
+    background-color: aliceblue;
+}
+
+.b2:hover {
+    background-color: #238ea5;
+}
+
+.about {
+    margin-top: 125px;
+    margin-bottom: 125px;
+    height: 310px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.about-div {
+    border: solid 2px #16acce;
+    width: 30%;
+    float: left;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: -54px;
+    position: relative;
+}
+
+.about-info {
+    position: absolute;
+}
+
+.div1 {
+    margin-right: 50px;
+}
+
+.about-div:hover h2 {
+    color: rgb(16 73 95);
+    transition: 1s;
+}
+
+.about-div:hover .p {
+    color: rgb(20 105 138);
+    transition: 1s;
+}
+
+.about-div::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgb(84, 147, 172);
+}
+
+.about-div:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    transition: 1s;
+    z-index: -1;
+}
+
+.div2 {
+    margin-right: 225px;
+}
+
+.div3 {
+    margin-left: -173px;
+}
+
+.p1 {
+    font-size: 20px;
+}
+
+.icon {
+    font-size: 45px;
+    margin-left: 2px;
+    color: #16acce;
+}
+
+.highlight {
+    text-align: center;
+    margin-top: 90px;
+    font-size: 30px;
+    padding-top: 70px
+}
+
+hr {
+    width: 102px;
+    height: 4px;
+    margin-left: 46%;
+    margin-top: -21px;
+    background-color: #16acce;
+}
+
+h2 {
+    margin-top: 26px;
+}
+
+.about-button {
+    width: 89px;
+    height: 34px;
+    border-radius: 10px;
+    background-color: #16acce;
+}
+
+.button1 {
+    margin-top: 40px;
+}
+
+.button2 {
+    margin-top: 20px;
+}
+
+.button3 {
+    margin-top: 20px;
+}
+
+.p {
+    font-size: 21px;
+    margin-top: 15px;
+}
+
+.container3 {
+    background-color: #bcd7de;
+    margin: auto;
+    width: 80%;
+    padding-bottom: 170px;
+    width: 100%;
+}
+
+.portfolio {
+    padding-top: 60px;
+    padding-left: 200px;
+    padding-bottom: 480px;
+}
+
+.portfolio-item {
+    float: left;
+    width: 30%;
+    position: relative;
+    padding: 20px;
+
+}
+
+.portfolio-item .overlay-cont-port {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 78%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(45, 109, 152, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+
+.portfolio-item:hover .overlay-cont-port {
+    visibility: visible;
+    opacity: 1;
+}
+
+.overlay-cont-port .overlay-cont-info {
+    position: absolute;
+    left: 50%;
+    width: 80%;
+    text-align: center;
+    margin-left: -130px;
+    padding-bottom: 20px;
+    margin-top: 65px;
+}
+ .overlay-cont-port .category {
+    color: #063363;
+    margin-bottom: 5px;
+    position: relative;
+    top: 15px;
+    font-size: 30px;
+    margin-top: -50px;
+} 
+
+.port-icon {
+    margin-top: 15px;
+    background-color: #12c1e6;
+    padding: 10px;
+}
+
+.overlay-cont-title {
+    color: #19414a;
+    font-size: 25px;
+} 
+
+.services {
+    margin: auto auto 550px auto;
+    width: 80%;
+    padding-bottom: 56px;
+}
+
+.serv {
+    border: solid 2px #16acce;
+    width: 30%;
+    float: left;
+    position: relative;
+    height: 200px;
+    margin-left: 28px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.serv:hover .serv-hover {
+    color: rgb(16 73 95);
+    transition: 1s;
+}
+.serv::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(9, 52, 69);
+    opacity: 0;
+}
+
+.serv:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    transition: 1s;
+}
+
+h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-left: -22px;
+    margin-top: 11px;
+}
+
+.serv-icon {
+    font-size: 30px;
+    margin-left: 40%;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.icon1 {
+    color: #a54747;
+}
+
+.icon2 {
+    color: #f13232;
+}
+
+.icon3 {
+    color: #c3d3e1;
+}
+
+.icon4 {
+    color: wheat;
+}
+
+.icon5 {
+    color: #665252;
+}
+
+.icon6 {
+    color: #5a6aaa;
+}
+
+.div4 {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: -12px;
+    padding-top: 25px;
+}
+
+.container5 {
+    background-color: #bcd7de;
+}
+
+.adv {
+    margin: auto;
+    width: 80%;
+    background-color: #bcd7de;
+    padding-bottom: 410px;
+    margin-bottom: 185px;
+}
+
+.adv-content {
+    width: 50%;
+    float: left;
+    padding-top: 50px;
+}
+
+span {
+    padding-top: 20px;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.p-adv {
+    font-size: 22px;
+    margin-right: 60px;
+}
+
+.adv-bullets {
+    display: flex;
+    margin-left: 166px;
+    font-size: 30px;
+    color: gray;
+}
+
+.active {
+    color: #16acce;
+}
+
+.adv-active:hover {
+    color: #16acce;
+}
+
+.check-icon {
+    color: #16acce;
+}
+
+.numbers {
+    background-image: url(../images/num.jpg);
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 310px;
+}
+
+.num-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.num-items {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.num-item {
+    width: 25%;
+    float: left;
+    text-align: center;
+    color: white;
+}
+
+.icon-num {
+    font-size: 33px;
+    color: #79c5ff;
+    margin-left: -19px;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.pricing {
+    background-color: #d6eff5;
+    margin-top: 200px;
+    margin-bottom: 185px;
+}
+
+.card:hover .card-hover {
+    color: rgb(20 57 76);
+    transition: 1s;
+}
+
+.p-price {
+    font-size: 21px;
+    margin-top: 10px;
+}
+
+.h2-price {
+    margin: 5px;
+    font-size: 46px;
+    margin-top: 11px;
+}
+
+h4 {
+    margin: 5px;
+    margin-top: -19px;
+    font-size: 18px;
+}
+
+.container7 {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    padding-bottom: 485px;
+}
+
+.card {
+    border: solid 4px #238ea5;
+    float: left;
+    width: 20%;
+    border-radius: 14px;
+    margin-left: 130px;
+    margin-top: 40px;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.card::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(84, 147, 172);
+    opacity: 0;
+}
+
+.card:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    transition: 1s;
+}
+
+.price {
+    height: 123px;
+    border: solid #238ea5;
+    border-radius: 65%;
+    width: 129px;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.b-price {
+    background-color: #238ea5;
+    border: solid #238ea5;
+    margin: 8px;
+    border-radius: 13px;
+    padding: 7px;
+}
+
+.staff {
+    background-image: url(../images/OIP\ \(4\).jpg);
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 390px;
+}
+
+.staff-overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.staff-items {
+    width: 90%;
+    margin: auto;
+}
+
+.staff-item {
+    width: 50%;
+    float: left;
+    color: #fff;
+    padding-right: 20px;
+    padding-top: 100px;
+    margin-bottom: 110px;
+    padding-left: 100px;
+}
+
+.staff-top {
+    position: relative;
+    line-height: 1.4;
+}
+
+.staff-img {
+    width: 100px;
+    height: 94px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 81px;
+}
+
+.h3-staff {
+    margin-top: -56px;
+    padding-top: 91px;
+    margin-bottom: -10px;
+}
+
+.h3-staff1 {
+    margin-left: -140px;
+}
+
+.h3-staff2 {
+    margin-left: -80px;
+}
+
+.span-staff1 {
+    margin-left: 110px;
+    color: #12c1e6;
+}
+
+.span-staff2 {
+    margin-left: 107px;
+    color: #12c1e6;
+}
+
+.p-staff {
+    margin-left: 20px;
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.team-item {
+    padding: 14px 18px;
+    float: left;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    background-color: #98bcc5;
+}
+
+.team-item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #5680a0;
+    opacity: 0;
+    transition: 1s;
+}
+
+.team-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+}
+
+.team-content {
+    margin-top: 50px;
+    padding-bottom: 350px;
+}
+
+.mid {
+    margin: 0 5%;
+}
+
+.team-img {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.team-img img {
+    width: 100%;
+}
+
+.team-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(232, 231, 239, 0.322);
+}
+
+.team-item:hover .team-overlay a {
+    visibility: visible;
+    transition: 1s;
+}
+
+.team-overlay a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(53, 171, 240);
+    color: #fff;
+    font-size: 23px;
+    margin-left: auto;
+    visibility: hidden;
+}
+
+.team-overlay a i {
+    line-height: 40px;
+}
+
+.team-info-title {
+    padding: 12px 0px;
+    color: rgb(72 92 120);
+}
+
+.team-info-span {
+    color: white;
+}
+
+.team-item:hover .team-info-title {
+    color: white;
+}
+
+.team-item:hover .team-info-span {
+    color: rgb(72 92 120);
+}
+
+.news-content {
+    padding-bottom: 550px;
+}
+
+.news-item {
+    float: left;
+    margin-top: 50px;
+    width: 30%;
+    margin-left: 32px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.news-item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #79c5ff;
+    opacity: 0;
+    transition: 1s;
+}
+
+.news-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    z-index: -1;
+}
+
+.news-img {
+    margin-bottom: 30px;
+}
+
+.news-sp {
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.news-icon {
+    font-size: 15px;
+    color: #12c1e6;
+}
+
+.news-h3 {
+    text-align: left;
+    margin-left: 1px;
+}
+
+.news-p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.news-a {
+    margin-top: 100px;
+    color: #12c1e6;
+}
+
+.footer {
+    background-color: #bcd7de;
+    text-align: center;
+    height: 300px;
+    padding: 60px 0;
+}
+
+.ul-footer li {
+    display: inline-block;
+    background-color: rgb(54, 96, 145);
+    font-size: 27px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.ul-footer {
+    list-style: none;
+}
+
+.ul-footer a {
+    color: white;
+}
+
+.ul-footer li:hover {
+    background-color: #4592a4;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 27px;
+}
+
+.footer-div {
+    margin-top: 10px;
+}
